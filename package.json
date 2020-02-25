@@ -1,0 +1,17 @@
+{
+  "name": "aaa-hotel",
+  "version": "1.0.0",
+  "description": "Website about hotel",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "keywords": [
+    "Hotel"
+  ],
+  "author": "Adnan Musinovic",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
