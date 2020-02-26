@@ -34,6 +34,42 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   line-height: 180%; }
 
+.big__heading {
+  font-size: 15rem;
+  letter-spacing: 1rem; }
+
+a {
+  display: inline-flex;
+  text-decoration: none; }
+
+.link, .link--white, .link--black {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  color: #040404;
+  position: relative; }
+  .link::after, .link--white::after, .link--black::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    background-color: #040404;
+    transition: all .3s ease-in-out; }
+  .link:hover::after, .link--white:hover::after, .link--black:hover::after {
+    height: 5rem;
+    width: 5rem; }
+  .link--white {
+    color: #fff; }
+    .link--white::after {
+      background-color: #fff; }
+  .link--black {
+    color: #040404; }
+    .link--black::after {
+      background-color: #040404; }
+
 .header {
   position: fixed;
   top: 0%;
@@ -54,3 +90,29 @@ h1, h2, h3, h4, h5, h6 {
       color: #fff;
       padding: 4.5rem;
       display: inline-block; }
+
+.hero {
+  height: 100%;
+  width: 100%; }
+  .hero .wrapper {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .hero .wrapper::after, .hero .wrapper::before {
+      content: '';
+      position: absolute;
+      right: 0%;
+      background-color: #040404;
+      width: .3rem; }
+    .hero .wrapper::after {
+      height: 10rem;
+      bottom: 0%; }
+    .hero .wrapper::before {
+      height: .3rem;
+      bottom: 12.5rem; }
+  .hero--link {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%); }

@@ -16,3 +16,59 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     line-height: 180%;
 }
+
+.big__heading {
+    font-size: 15rem;
+    letter-spacing: 1rem;
+}
+
+a {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.link {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: $color-text;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -20%;
+        transform: translate(-50%, -50%);
+        height: 2.6rem;
+        width: 2.6rem;
+        border-radius: 50%;
+        background-color: $color-text;
+        transition: all .3s ease-in-out;
+        
+    }
+
+    &:hover::after {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    &--white {
+        @extend .link;
+        color: $color-white;
+
+        &::after {
+            @extend .link::after;
+            background-color: $color-white;
+        }
+    }
+
+    &--black {
+        @extend .link;
+        color: $color-text;
+
+        &::after {
+            @extend .link::after;
+            background-color: $color-text;
+        }
+    }
+}
