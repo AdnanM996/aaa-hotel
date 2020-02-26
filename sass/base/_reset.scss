@@ -19,3 +19,9 @@ html, body {
 body {
     color: $color-text;
 }
+
+.wrapper {
+    display: flex;
+    width: 120rem;
+    margin: 0rem auto;
+}

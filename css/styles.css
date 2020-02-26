@@ -15,6 +15,11 @@ html, body {
 body {
   color: #040404; }
 
+.wrapper {
+  display: flex;
+  width: 120rem;
+  margin: 0rem auto; }
+
 html {
   font-size: 62.5%; }
 
@@ -28,3 +33,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 180%; }
+
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 2;
+  width: 100%; }
+  .header .wrapper {
+    justify-content: flex-end;
+    align-items: center; }
+  .header__links {
+    cursor: pointer; }
+    .header__links--empty {
+      color: #040404;
+      padding: 4.5rem;
+      display: inline-block; }
+    .header__links--full {
+      background-color: #856d47;
+      color: #fff;
+      padding: 4.5rem;
+      display: inline-block; }

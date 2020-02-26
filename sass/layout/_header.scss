@@ -1,0 +1,31 @@
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    width: 100%;
+
+    & .wrapper {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__links {
+        cursor: pointer;
+        
+
+        &--empty {
+            color: $color-text;
+            padding: 4.5rem;
+            display: inline-block;
+        }
+
+        &--full {
+            background-color: $color-fifth;
+            color: $color-white;
+            padding: 4.5rem;
+            display: inline-block;
+        }
+    }
+
+}
