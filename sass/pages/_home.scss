@@ -1,6 +1,7 @@
 .hero {
     height: 100%;
     width: 100%;
+    background-color: $color-primary;
 
     & .wrapper {
         height: 100%;
@@ -34,5 +35,16 @@
         bottom: 10%;
         left: 10%;
         transform: translate(-10%, -10%);
+    }
+}
+
+.welcome {
+    background-color: $color-secondary;
+
+    & .wrapper {
+        position: relative;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
 }
