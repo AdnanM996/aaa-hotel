@@ -119,9 +119,60 @@ a {
     transform: translate(-10%, -10%); }
 
 .welcome {
-  background-color: #0d221e; }
+  background-color: #0d221e;
+  color: #fff; }
   .welcome .wrapper {
     position: relative;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 10rem 0rem; }
+    .welcome .wrapper::after {
+      content: '';
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      background-color: #fff;
+      width: .3rem;
+      height: 5rem; }
+  .welcome__container {
+    margin: 5rem auto;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30.5rem;
+    overflow: hidden; }
+    .welcome__container__text {
+      font-size: 5.6rem;
+      color: #fff;
+      line-height: 180%; }
+  .welcome--link {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    transform: translate(-10%, -10%); }
+
+.design {
+  position: relative; }
+  .design::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -103%;
+    transform: translate(-50%, -50%);
+    height: .5rem;
+    width: 100%;
+    background-color: #fff; }
+
+.destination {
+  position: relative;
+  float: right; }
+  .destination::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -54%;
+    transform: translate(-50%, -50%);
+    height: .5rem;
+    width: 100%;
+    background-color: #fff; }
